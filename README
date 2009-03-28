@@ -1,0 +1,18 @@
+This is a simple script for UNIX or Linux based systems to look up the availability of .com domain names.  
+
+USAGE:  (Say, you want to see if stuff.com is available.  Then simply type:)
+
+  check stuff
+
+That's it! That will tell you if stuff.com is available.  If you want to check for other types of domains (.net, .org, etc.), then you'll have to modify the script.  Sorry this is version 0.0.1.  I probably put more time into this README file that writing the script.
+
+The reason you would want to use this is if you are looking for a good domain, and you don't want to keep waiting for the GoDaddy page to reload for 20 seconds.
+
+All this script does is use the dig command, then processes the output to give a simple human readable indication of whether the domain is available or not.
+
+It's not meant to be a complete solution or the best solution.  It's just a little hack that works for me and I find useful.  The obvious flaw is that since this only looks at domain servers, somebody may have already registered the domain, but just didn't configure their DNS.  Most likely that's a very small percentage of domains..... one would think.
+
+Anyway, hope you find it handy when you're domain shopping.
+
+I even added some color coding.  Enjoy!
+

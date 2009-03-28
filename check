@@ -1,0 +1,12 @@
+#!/bin/bash 
+declare domain=$1
+declare result=""
+
+result=`dig "$domain.com"`
+ 
+if echo $result | grep -qi "nxdomain" 
+ then
+  echo -e "\033[32m$domain available\033[0m" # for green output
+else
+  echo -e "\033[31m$domain not available\033[0m" # for red output
+fi
